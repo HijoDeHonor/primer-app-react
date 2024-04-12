@@ -1,4 +1,4 @@
-import { deleteMovie } from "../fetch";
+import { deleteMovie } from "../../../services/fetch";
 import Button from "react-bootstrap/Button";
 
 export function DeleteMovieBtn({ Id, onUpdateMovies }) {

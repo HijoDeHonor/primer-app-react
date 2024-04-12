@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import EditMovie from "./modifymodal.jsx";
 import NewMovie from "./newMovie.jsx";
 
-import { getMovies } from "./fetch.js";
-import DeleteMovieBtn from "./assets/deletemovie.jsx";
+import { getMovies } from "../../../services/fetch.js";
+import DeleteMovieBtn from "./deletemovie.jsx";
 
 //funcion para ver la lista de peliculas
 export function MovieList() {

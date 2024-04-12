@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import MovieList from "./movieList.jsx";
-import NewMovie from "./newMovie.jsx";
+import MovieList from "./components/movieList.jsx";
+import NewMovie from "./components/newMovie.jsx";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 

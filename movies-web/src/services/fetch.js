@@ -1,4 +1,5 @@
-const URL = "http://localhost:3000/api/movies";
+import { MOVIES_URL } from "../utils/constants";
+const URL = MOVIES_URL;
 
 // Función para adquirir la lista de películas
 export async function getMovies() {

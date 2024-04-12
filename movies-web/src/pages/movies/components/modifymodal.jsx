@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "../src/index.css"; // Importar el archivo CSS de estilos
-import { modifyMovie } from "./fetch";
+import { modifyMovie } from "../../../services/fetch";
 
 
 function EditMovie({ item, onUpdateMovies }) {
@@ -27,7 +27,6 @@ function EditMovie({ item, onUpdateMovies }) {
       Rating: rating,
       ImgURL: imgurl,
     };
-    console.log(updateMovie);
     try{
       await modifyMovie(updateMovie);
       onUpdateMovies();

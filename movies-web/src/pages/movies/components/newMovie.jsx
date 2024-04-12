@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { addMovie } from "./fetch";
+import { addMovie } from "../../../services/fetch";
 
 export function NewMovie({ onUpdateMovies }) {
   const [formData, setFormData] = useState({
@@ -9,7 +9,6 @@ export function NewMovie({ onUpdateMovies }) {
     Rating: "",
     ImgURL: "",
   });
-  console.log(formData);
   const [showForm, setShowForm] = useState(false);
 
   const handleChange = (event) => {
